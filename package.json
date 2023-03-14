@@ -1,0 +1,26 @@
+{
+  "name": "Omnia Biosystems",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "cv": "cd packages/doc-pdf-deprecated && npm",
+    "website": "cd packages/website && npm",
+    "install": "npm run cv install && npm run website install",
+    "build": "npm run cv run build && npm run website run build",
+    "dev": "npm run cv run dev & npm run website run dev",
+    "prod": "npm run website start"
+  },
+  "author": "Omnia Biosystems",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.2.10",
+    "grunt-cli": "^1.4.3",
+    "har-validator": "^5.1.5",
+    "minimatch": "^7.4.2",
+    "request": "^2.88.2",
+    "uuid": "^9.0.0"
+  }
+}
